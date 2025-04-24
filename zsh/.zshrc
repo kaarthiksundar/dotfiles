@@ -40,7 +40,7 @@ alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 
-alias bat=cat
+alias cat=bat 
 alias v="/Users/kaarthik/.nix-profile/bin/nvim"
 alias g="/Users/kaarthik/.nix-profile/bin/lazygit"
 
