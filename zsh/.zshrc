@@ -41,8 +41,8 @@ alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 
 alias cat=bat 
-alias v="/Users/kaarthik/.nix-profile/bin/nvim"
-alias g="/Users/kaarthik/.nix-profile/bin/lazygit"
+alias vim=nvim
+alias lg="/Users/kaarthik/.nix-profile/bin/lazygit"
 
 # Git
 alias gc="git commit -m"
@@ -70,7 +70,7 @@ alias ......="cd ../../../../.."
 # navigation
 cx() { cd "$@" && l; }
 fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
-f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
+f() { echo "$(find . -type f -not -path '*/.*' | fzf --preview 'less {}')" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 
 eval "$(zoxide init zsh)"
