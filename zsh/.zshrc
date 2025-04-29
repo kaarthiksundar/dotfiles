@@ -1,5 +1,26 @@
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/kaarthik/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/kaarthik/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/kaarthik/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/kaarthik/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Licence servers + optimization solvers 
+export GUROBI_HOME=/Library/gurobi1201/macos_universal2
+export GRB_LICENSE_FILE=$HOME/gurobi.lic 
+export PATH=/Library/gurobi1201/macos_universal2/bin:$PATH
+
 # PATH 
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=$HOME/softwares/bin/:$PATH
 
 # zsh home directory
 export ZSH=$HOME/.config/zsh/
@@ -40,9 +61,10 @@ alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 
+alias cd=z 
 alias cat=bat 
 alias vim=nvim
-alias lg="/Users/kaarthik/.nix-profile/bin/lazygit"
+alias lg=lazygit
 
 # Git
 alias gc="git commit -m"
