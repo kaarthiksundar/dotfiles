@@ -1,0 +1,11 @@
+bat
+btop
+eza
+fzf
+jesseduffield/lazygit/lazygit
+neovim
+ripgrep-all
+starship
+stow
+tmux
+zoxide
