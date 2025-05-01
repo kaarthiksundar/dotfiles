@@ -1,9 +1,9 @@
 add_newline = false
 # A minimal left prompt
-format = """$directory$character"""
+format = """$directory$git_branch $git_status$character"""
 palette = "catppuccin_mocha"
 # move the rest of the prompt to the right
-right_format = """$git_branch $git_status"""
+# right_format = """$git_branch $git_status"""
 command_timeout = 1000
 
 [character]
@@ -11,7 +11,22 @@ vicmd_symbol = "[N] >>>"
 success_symbol = '[➜](bold green)'
 
 [git_branch]
-format =  '[$symbol$branch(:$remote_branch)]($style)'
+format = "[$symbol$branch(:$remote_branch)]($style)"
+symbol = " "
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+untracked = "🛤️  ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️  ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️  ×${count} "
+style = "bright-white"
+format = "$all_status$ahead_behind"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

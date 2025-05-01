@@ -16,7 +16,9 @@ unset __conda_setup
 # Licence servers + optimization solvers 
 export GUROBI_HOME=/Library/gurobi1201/macos_universal2
 export GRB_LICENSE_FILE=$HOME/gurobi.lic 
+export CPLEX_STUDIO_BINARIES=$HOME/Applications/CPLEX_Studio2211/cplex/bin/arm64_osx/
 export PATH=/Library/gurobi1201/macos_universal2/bin:$PATH
+export PATH=$HOME/Applications/CPLEX_Studio2211/cplex/bin/arm64_osx/:$PATH
 
 # PATH 
 export PATH=/opt/homebrew/bin:$PATH
