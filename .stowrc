@@ -3,3 +3,4 @@
 --ignore=DS_Store
 --ignore=tmux/README.md
 --ignore=brew.txt
+--ignore=README.md
