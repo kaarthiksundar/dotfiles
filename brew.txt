@@ -3,6 +3,7 @@ btop
 eza
 fzf
 jesseduffield/lazygit/lazygit
+midnight-commander
 neovim
 ripgrep-all
 starship
