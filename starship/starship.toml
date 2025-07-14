@@ -1,6 +1,6 @@
 add_newline = false
 # A minimal left prompt
-# format = """$directory$character """
+format = """$directory$os$character"""
 palette = "catppuccin_mocha"
 # move the rest of the prompt to the right
 right_format = """$git_branch $git_status"""
@@ -8,7 +8,11 @@ command_timeout = 1000
 
 [character]
 vicmd_symbol = "[N] >>>"
-success_symbol = '[➜](bold green)'
+success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
+error_symbol = '[✖](bold fg:red bg:base)[](bold base)'
+
+[os] 
+disabled=false 
 
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style)"
