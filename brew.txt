@@ -2,9 +2,10 @@ bat
 btop
 eza
 fzf
-jesseduffield/lazygit/lazygit
+lazygit
 midnight-commander
 neovim
+node
 ripgrep-all
 starship
 stow

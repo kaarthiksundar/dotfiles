@@ -67,6 +67,7 @@ alias cd=z
 alias cat=bat 
 alias vim=nvim
 alias lg=lazygit
+alias ipe="open $HOME/Applications/Ipe.app"
 
 # Git
 alias gc="git commit -m"
